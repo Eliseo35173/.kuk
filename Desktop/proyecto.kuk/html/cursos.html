@@ -4,8 +4,9 @@
     <meta charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
     <title>Cursos</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link rel='stylesheet' type='text/css' media='screen' href='../css/home.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='../css/kuk.css'>
     <script src='main.js'></script>
     <link rel="icon" href="../multimedia/KUK logo png.png">
 
@@ -14,22 +15,40 @@
     <h1>KuK artesanias</h1>
 
 <hr>
-<div class="listas">
-    <header>              
-        <nav>
-            <ul><a href="./home.html">inicio</a></ul>
-            <ul><a href="./faqs.html">FAQs</a></ul>
-            <ul><a href="./nosotros.html">Nosotros</a></ul>
-            <ul><a href="./contacto.html">Contacto</a></ul>
-        </nav>
-    </header>
+
+<nav class="navbar max-width: 100%; navbar-expand-sm navbar-light bg-warning">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#"></a>
+        <button class="navbar-toggler "  type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav">
+        <li class="nav-item">
+        <a class="nav-link active" aria-current="page" href="/index.html">Home</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" href="/html/contacto.html">Contacto</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link disabled" href="#">Nosotros</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link " href="/html/cursos.html">Cursos</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link disabled">FAQs</a>
+    </li>
+</ul>
 </div>
+</div>
+</nav>
 <hr>
 
 
 <H1>Dias y horarios de los cursos</H1>
-<table border="2" cellpadding="10" cellspacing="5" width="100" height="70">
-    <tr>
+<table  class="dyh">
+    <tr class="dias">
         <th>Lunes</th>
         <th>Martes</th>
         <th>Miercoles</th>
@@ -38,7 +57,7 @@
         <th>Sabado</th>
         <th>Domingo</th>
     </tr>
-    <tr>
+    <tr class="horarios">
         <td>Bordado de 10:00 a 12:00</td>
         <td>Atrapasueños de 14:00 a 17:00</td>
         <td>X</td>
@@ -49,74 +68,36 @@
     </tr>
 </table>
 <br> 
-<div>
-te queres anotar?
-    <input type="radio" name="rta" value="1"> Si 
-    <input type="radio" name="rta" value="1"> No 
-</div>
+<div class="caja">
 
-<br> 
-<div>
-    <select name="curso" id="horarios curso">
-    <option value="1">Bordado el lunes</option>
-    <option value="2">Atrapasueños el martes</option>
-    <option value="3">Bordado los jueves</option>
-    <option value="4">Macrame los viernes</option>
-    <option value="5">Macrame los Sabado</option>
-    </select>
-</div>
-
-<h2>Cupos limitados! No te quedes afuera!Te esperamos!</h2>
-
-
-<h4>Recuerden que nosotros les brindamos todas las herramientas necesarias y todos los recursos que precisen. Tambien en todos los cursos te llevas tu artesania. </h4>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    <footer>
+    <div class="encuesta">
+        te queres anotar?
+        <input type="radio" name="rta" value="1"> Si 
+        <input type="radio" name="rta" value="1"> No 
+    </div>
     
-        
-        <hr>
-        seguinos en las redes!
-        
-        <table class="foter">
-            <th>
-                <div>
-                    <a href="https://www.instagram.com/artesanias.kuk/" target="_blank">
-                        <img src="https://ichef.bbci.co.uk/news/640/amz/worldservice/live/assets/images/2016/05/11/160511143151_instagram_nuevo_logo_640x360_instagram_nocredit.jpg" alt="instagram" width="50">
-                    </a>
-                </div>
-            </th>
-            <th>
-                <div>
-                    <a href="https://www.facebook.com/artesanias.kuk" target="_blank">
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Facebook_icon.svg/384px-Facebook_icon.svg.png" alt="Facebook_icon" width="30">
-                    </a>
-                </div>
-            </th>
-        </table>
-        
-    </footer>
+    <br> 
+    <div class="confirmacion">
+        <select name="curso" id="horarios curso">
+            <option value="1">Bordado el lunes</option>
+            <option value="2">Atrapasueños el martes</option>
+            <option value="3">Bordado los jueves</option>
+            <option value="4">Macrame los viernes</option>
+            <option value="5">Macrame los Sabado</option>
+        </select>
+    </div>
+    
+    <div class="enviar">
+        <input type="submit" value="enviar">
+    </div>
+</div>
+    
+    <h2>Cupos limitados! No te quedes afuera!Te esperamos!</h2>
+
+
+<h4>Recuerden que nosotros les brindamos todas las herramientas necesarias y todos los recursos que precisen. En todos los cursos te llevas tu artesania. 
+    No te lo pierdas!
+</h4>
 
 
 
@@ -126,6 +107,70 @@ te queres anotar?
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+<footer>
+
+
+
+    <table class="foter">
+        <th>
+            <img src="/multimedia/KUK logo.jpg" width="100" alt="">
+        </th>
+        <th>
+            <div>
+                <a href="https://www.instagram.com/artesanias.kuk/" target="_blank">
+                    <img src="/multimedia/instagram.svg" alt="instagram" width="50">
+                </a>
+            </div>
+        </th>
+        <th>
+            <div>
+                <a href="https://www.facebook.com/artesanias.kuk" target="_blank">
+                    <img src="/multimedia/facebook.svg" alt="Facebook_icon" width="50">
+                </a>
+            </div>
+        </th>
+        <th>
+            <div>
+                <a href="https://www.facebook.com/messages/t/278378175880912" target="_blank"> <img src="/multimedia/messenger.svg" alt="messenger" width="50"
+                ></a>
+            </div>
+        </th>
+        <th>
+            <div>
+                <a href="https://www.google.com/maps/place/Any+lu/@-34.419642,-58.571913,17z/data=!4m5!3m4!1s0x0:0x3d5b0dad1c8e0145!8m2!3d-34.419642!4d-58.5719129?hl=es" target="_blank" ><img src="/multimedia/geo-alt-fill.svg" width="50" alt=""></a>
+            </div>
+        </th>
+    </table>
+    
+
+
+
+
+
+
+</footer>
+
+
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 
 
 </body>
